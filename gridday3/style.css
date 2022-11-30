@@ -1,0 +1,143 @@
+
+body{
+  padding: 0;
+  margin: 10px;
+}
+
+.navbar{
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+
+  height: 50px;
+  justify-content: flex-end;
+  align-items: center;  
+}
+
+.navbar ul li{
+  margin: 10px;
+  list-style: none;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.headerFoto {
+  display: flex;
+  width: 100%;
+  height: 300px;
+ justify-content: center;
+  margin-bottom: 40px;
+}
+
+#containerGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+ 
+  grid-template-areas: 
+  " .    one    . two"
+  "three one four two"
+  "three one four two"
+  "five one four two"
+  "five one four two"
+  ;
+  height: 600px;
+}
+
+          
+#one{
+  grid-area: one;
+  background-image: url(./furniture1@2x.png);
+  background-size: cover;
+}
+
+#two{
+  grid-area: two;
+  background-image: url(./couch@2x.png);
+  background-size: cover;
+
+}
+#three{
+  grid-area: three;
+background-image: url(./bookcases@2x.png);
+background-size: cover;
+}
+
+#four{
+  
+  grid-area: four;
+  background-image: url(./patio@2x.png);
+  background-size: cover;
+}
+
+#five{
+  
+  grid-area: five;
+  background-image: url(./furniture2.jpg);
+  background-size: cover;
+}
+
+#five{
+  
+  grid-area: five;
+  background-image: url(./furniture2.jpg);
+  background-size: cover;
+}
+
+
+.furniture{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: inline-block ;
+  flex-basis: 50% 50%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+.furniture img{
+  display: flex;
+  flex-direction: inline;
+  width: 300px
+ 
+  
+ 
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  height: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.footer ul li{
+  margin: 10px;
+  list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .navbar ul{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 200px;
+  
+  }
+}
+
+
