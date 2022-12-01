@@ -107,11 +107,37 @@ background-size: cover;
 .furniture img{
   display: flex;
   flex-direction: inline;
-  width: 300px
- 
-  
- 
+  width: 300px;
 }
+
+  .survey{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid red;
+    margin: 40px;
+
+  }
+
+ .survey p{
+  display: block;
+  margin: 20px;
+ }
+
+ #survey{
+  display: flex;
+  margin: 20px;
+ }
+
+ #buttonSubmit{
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ 
+ }
+
 
 .footer ul {
   display: flex;
@@ -131,13 +157,53 @@ background-size: cover;
   body {
     background-color: lightblue;
   }
+
   .navbar ul{
    display: flex;
    flex-direction: column;
    align-items: center;
    height: 200px;
-  
   }
+
+  .furniture img{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .survey{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid red;
+    margin: 3px;
+  }
+  .survey p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+  
+   #survey{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: 20px;
+   }
+  
+   #buttonSubmit{
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+  
 }
 
 
